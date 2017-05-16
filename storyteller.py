@@ -3,5 +3,3 @@
 # senior project
 
 import sys
-
-class Storyteller
