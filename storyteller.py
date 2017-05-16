@@ -3,3 +3,6 @@
 # senior project
 
 import sys
+import helpermethods as h
+
+h.readABook()

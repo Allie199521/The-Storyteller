@@ -8,3 +8,5 @@ def readABook():
 	file = input("What book should I read? ")
 	inputfile = open(file)
 	outputfile = open(file+".txt", 'w')
+	for line in inputfile:
+		outputfile.write(line)
