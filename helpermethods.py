@@ -10,3 +10,6 @@ def readABook():
 	outputfile = open(file+".txt", 'w')
 	for line in inputfile:
 		outputfile.write(line)
+		
+def readAWord(word):
+	
