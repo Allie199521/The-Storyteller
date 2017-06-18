@@ -12,4 +12,4 @@ def readABook():
 		outputfile.write(line)
 		
 def readAWord(word):
-	
+	return 0
