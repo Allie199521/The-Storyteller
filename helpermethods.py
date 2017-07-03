@@ -3,13 +3,19 @@
 # senior project
 
 import sys
+import pycorenlp
 
+#reads a book
 def readABook():
 	file = input("What book should I read? ")
 	inputfile = open(file)
 	outputfile = open(file+".txt", 'w')
-	for line in inputfile:
+	word1 = ""
+	for word in inputfile.split():
 		outputfile.write(line)
-		
-def readAWord(word):
+		word1 = word
+	print(word)
+
+#finds the sentence structures		
+def sentenceStructs():
 	return 0
