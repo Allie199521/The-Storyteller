@@ -8,16 +8,14 @@ class Character:
 	gender = True 	# gender = true or false, false = female; true = male
 	age = 0
 	isHuman = True
-	looksLike
-	actsLike
 	
 	#initialize a character
 	def __init__(self, name, gender, age):
 		self.name = name
 		self.gender = gender
 		self.age = age
-		self.looksLike = {}
-		self.actsLike = {}
+		self.looksLike = ([])
+		self.actsLike = ([])
 
 	#print out the character's name
 	def __str__(self):
