@@ -91,6 +91,9 @@ def addCharacterisitic(self, id, fact):
 	# face type
 	# height
 	# ~weight
+	# backgrounds - where come from
+		# will correlate with personality
+			# shy == country; etc.
 
 # personalities
 	##contains##

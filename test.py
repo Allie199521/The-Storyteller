@@ -5,6 +5,7 @@
 import sys
 import character as c
 import helpermethods as h
+import nltk
 
 h.readABook()
 #h.readAWord()
