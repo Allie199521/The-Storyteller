@@ -15,7 +15,5 @@ allie = c.make_character("allie", False, 22)
 print (allie)
 allie.changeIsHuman(True)
 print (allie)
-allie.addCharacteristic(0, "eyes: blue")
-allie.addCharacteristic(1, "shy")
-allie.describe(0)
-allie.describe(1)
+dic = {('hello', 'goodbye')}
+dic.add

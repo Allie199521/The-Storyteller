@@ -2,20 +2,25 @@
 # alexandra miranda
 # senior project
 
+import sys
+import dictionaries
+from array import *
 
 class Character:
 	name = ""
 	gender = True 	# gender = true or false, false = female; true = male
 	age = 0
 	isHuman = True
+	looksLike = {}
+	actsLike = {}
 	
 	#initialize a character
 	def __init__(self, name, gender, age):
 		self.name = name
 		self.gender = gender
 		self.age = age
-		self.looksLike = ([])
-		self.actsLike = ([])
+		#self.looksLike = {}
+		#self.actsLike = {}
 
 	#print out the character's name
 	def __str__(self):
@@ -33,20 +38,25 @@ class Character:
 	def looksLike(self):
 		return 0
 
+######################################Needs Work############################################
 	# this adds a charaterisitc to the proper
 	# id = 0 - lookslike[]
 	# id = 1 - actslike[]
 	def addCharacteristic(self, id, fact):
+		words = fact.split()
+		fact1 = words[0]
+		fact2 = words[1]
 		if(id == 0):
-			looksLike.append(fact)
+			looksLike.add(fact1, fact2)
 		elif (id == 1):
-			actsLike.append(fact)
+			actsLike.add(fact1, fact2)
 
 	def describe(self, id):
 		if(id == 0):
 			print looksLike
 		elif (id == 1):
 			print actsLike
+#############################################################################################
 			
 #method to define character
 def make_character(name, gender, age):

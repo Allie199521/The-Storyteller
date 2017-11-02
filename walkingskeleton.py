@@ -69,7 +69,9 @@ def isHuman(self, bool):
 # should be able to add the fact to the appropriate array
 def addCharacterisitic(self, id, fact):
 
+##Plurals Struct:##
 
+# characters = new Character()
 
 ##Databases Required:##
 
