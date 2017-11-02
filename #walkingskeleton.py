@@ -2,7 +2,10 @@
 #by alexandra miranda
 #senior project
 
+##Book Structs:##
+
 # readABook(bookname) -
+# paramaters: book's name
 # should be able to parse a book 
 # and get the following data:
 # title, obviously
@@ -14,6 +17,7 @@
 def readABook(name):
 
 # defineAWord(word)
+# parameters: word
 # should be able to find word
 # can define and store the following:
 # word
@@ -26,4 +30,15 @@ def readABook(name):
 def defineAword(word):
 
 # sentanceStruct(sentance)
-# should be able to define
+# 
+# should be able to define:
+# find part of speech (in context)
+# build a [map] that tracks the sentance struct
+# save this sentance struct in database
+def sentanceStruct(sentance):
+
+##Character Structs:##
+
+# toString()
+# returns a character's name/pronoun in an array
+# 
