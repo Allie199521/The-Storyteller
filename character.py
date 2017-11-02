@@ -38,10 +38,9 @@ class Character:
 	# this adds a charaterisitc to the proper
 	def addCharacteristic(self, id, fact):
 		if(id == 0):
-			
-		
+			return 0
 
-#method to define character(Supposedly)
+#method to define character
 def make_character(name, gender, age):
 	char = Character(name, gender, age)
 	return char
