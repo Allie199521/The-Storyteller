@@ -33,6 +33,11 @@ class Character:
 
 	#takes user input to request characteristics or chooses randomly
 	def looksLike(self):
+		return 0
+
+	def addCharacteristic(self, id, fact):
+		if(id == 0):
+			
 		
 
 #method to define character(Supposedly)

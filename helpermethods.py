@@ -3,7 +3,6 @@
 # senior project
 
 import sys
-import pycorenlp
 
 #reads a book
 def readABook():
