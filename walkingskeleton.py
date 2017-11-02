@@ -51,8 +51,10 @@ def sentanceStruct(sentance):
 def __init__(self, name, gender, age):
 
 # __init__(self, name, feature)
-# parameters: self; char name, bool gender, int age
-def __init__(self, name, gender, age):
+# parameters: self; char name, string feature
+def __init__(self, name, feature):
+
+
 
 # toString()
 # returns a character's name/pronoun in an array
@@ -63,3 +65,52 @@ def toString(self):
 # parameter: a boolean (if goes from human to not human - false)
 #				(if goes from not human to human - true)
 def isHuman(self, bool):
+
+# addCharacterisitic(self, id, fact)
+# parameters: int id (either 0 or 1), string fact
+# should be able to add the fact to the appropriate array
+def addCharacterisitic(self, id, fact):
+
+# 
+
+##Databases Required:##
+
+# dictionary
+	##contains##
+	# words
+	# definition
+	# synonyms
+	# antonyms
+	# part of speech
+	# relevant words (car --> drive)
+	# words that come before (most often)
+	# words that come after (most often)
+
+# charteristics(looks)
+	##contains:##
+	# eye color(s)
+	# hair color(s)
+	# body type
+	# hair type
+	# face type
+	# height
+	# ~weight
+
+# personalities
+	##contains##
+	# different personality traits
+	# a series of actions that would relate
+	# maybe look into giving them personality types
+
+# sentance structures
+	##contains##
+	# sentence structures
+	# parts of speech
+
+# books:
+	##contains##
+	# title
+	# author
+	# sentiment
+	# common words
+	# common sentance structs
