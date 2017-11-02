@@ -10,9 +10,12 @@ import PyDictionary as pd
 import numpy as np
 import matplotlib as mp
 
-h.readABook()
 #h.readAWord()
 allie = c.make_character("allie", False, 22)
 print (allie)
-allie.changeIsHuman(False)
+allie.changeIsHuman(True)
 print (allie)
+#allie.addCharacteristic(0, "eyes: blue")
+#allie.addCharacteristic(1, "shy")
+#allie.describe(0)
+#allie.describe(1)

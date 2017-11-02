@@ -2,10 +2,10 @@
 # alexandra miranda
 # senior project
 
-# gender = true or false, true = female; false = male
+
 class Character:
 	name = ""
-	gender = True
+	gender = True 	# gender = true or false, false = female; true = male
 	age = 0
 	isHuman = True
 	looksLike = []
@@ -16,9 +16,9 @@ class Character:
 		self.name = name
 		self.gender = gender
 		self.age = age
-		self.looksLike = looksLike()
-		self.actsLike = acts()
-	
+		self.looksLike = []
+		self.actsLike = []
+
 	#print out the character's name
 	def __str__(self):
 		return self.name + " %s %s %s" %(self.gender, self.age, self.isHuman)
@@ -36,9 +36,20 @@ class Character:
 		return 0
 
 	# this adds a charaterisitc to the proper
-	def addCharacteristic(self, id, fact):
-		if(id == 0):
-			return 0
+	# id = 0 - lookslike[]
+	# id = 1 - actslike[]
+#	def addCharacteristic(self, id, fact):
+#		if(id == 0):
+#			looksLike.append(fact)
+#		elif (id == 1):
+#			actsLike.append(fact)
+#
+#	def describe(self, id):
+#		if(id == 0):
+#			print looksLike
+#		elif (id == 1):
+#			print actsLike
+			
 
 #method to define character
 def make_character(name, gender, age):
