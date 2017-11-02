@@ -54,8 +54,6 @@ def __init__(self, name, gender, age):
 # parameters: self; char name, string feature
 def __init__(self, name, feature):
 
-
-
 # toString()
 # returns a character's name/pronoun in an array
 def toString(self):
@@ -70,8 +68,6 @@ def isHuman(self, bool):
 # parameters: int id (either 0 or 1), string fact
 # should be able to add the fact to the appropriate array
 def addCharacterisitic(self, id, fact):
-
-# 
 
 ##Databases Required:##
 

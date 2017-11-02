@@ -35,6 +35,7 @@ class Character:
 	def looksLike(self):
 		return 0
 
+	# this adds a charaterisitc to the proper
 	def addCharacteristic(self, id, fact):
 		if(id == 0):
 			
