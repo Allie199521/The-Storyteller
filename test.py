@@ -5,7 +5,10 @@
 import sys
 import character as c
 import helpermethods as h
-import nltk
+import nltk as nl
+import PyDictionary as pd
+import numpy as np
+import matplotlib as mp
 
 h.readABook()
 #h.readAWord()
