@@ -69,6 +69,17 @@ def isHuman(self, bool):
 # should be able to add the fact to the appropriate array
 def addCharacterisitic(self, id, fact):
 
+##Setting Struct:##
+
+# place
+# time
+# plurality
+
+##Plot Struct:##
+
+# setting
+# characters
+
 ##Plurals Struct:##
 
 # characters = new Character()

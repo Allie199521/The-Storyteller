@@ -3,6 +3,9 @@
 # senior project
 
 import sys
+import nltk as nl
+import numpy as np
+import matplotlib as mt
 
 #reads a book
 def readABook():
@@ -14,6 +17,10 @@ def readABook():
 		outputfile.write(line)
 		word1 = word
 	print(word)
+
+def sentiment():
+	
+
 
 #finds the sentence structures		
 def sentenceStructs():

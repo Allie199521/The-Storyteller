@@ -19,8 +19,8 @@ class Character:
 		self.name = name
 		self.gender = gender
 		self.age = age
-		#self.looksLike = {}
-		#self.actsLike = {}
+		self.looksLike = {}
+		self.actsLike = {}
 
 	#print out the character's name
 	def __str__(self):
@@ -47,9 +47,9 @@ class Character:
 		fact1 = words[0]
 		fact2 = words[1]
 		if(id == 0):
-			looksLike.add(fact1, fact2)
+			looksLike.add((fact1, fact2))
 		elif (id == 1):
-			actsLike.add(fact1, fact2)
+			actsLike.add((fact1, fact2))
 
 	def describe(self, id):
 		if(id == 0):

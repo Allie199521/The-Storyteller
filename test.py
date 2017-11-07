@@ -16,4 +16,8 @@ print (allie)
 allie.changeIsHuman(True)
 print (allie)
 dic = {('hello', 'goodbye')}
-dic.add
+dic.add(('ciao', 'woah'))
+print (dic)
+dic1 = dict()
+dic1.append('anything')
+#allie.addCharacteristic(0, 'eyes: blue')
