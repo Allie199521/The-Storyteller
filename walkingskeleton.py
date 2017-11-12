@@ -72,8 +72,15 @@ def addCharacterisitic(self, id, fact):
 ##Setting Struct:##
 
 # place
+	##limits:##
+	# inside
+	# outside
+	# city
+	# 
 # time
 # plurality
+
+
 
 ##Plot Struct:##
 

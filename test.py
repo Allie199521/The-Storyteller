@@ -13,9 +13,6 @@ import bookstructs as bs
 allie = c.make_character("allie", False, 22)
 print (allie)
 allie.changeIsHuman(True)
-print (allie)
-dic = {('hello', 'goodbye')}
-dic.add(('ciao', 'woah'))
 allie.addCharacteristic(0, 'eyes: blue')
 allie.describe(0)
 bs.sentiment()

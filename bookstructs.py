@@ -12,7 +12,6 @@ from textblob import TextBlob
 def readABook():
 	file = input("What book should I read? ")
 	inputfile = open(file)
-	outputfile = open(file+".txt", 'w')
 	for word in inputfile.split():
 		outputfile.write(word)
 	print(word)
