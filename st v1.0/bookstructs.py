@@ -4,36 +4,41 @@
 
 import sys
 import nltk as nl
+from nltk import pos_tag, word_tokenize
 import numpy as np
 import matplotlib as mt
 import matplotlib.pyplot as plt
 from textblob import TextBlob
+from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
 arr = []
+sentances = {}
+ana = SentimentIntensityAnalyzer()
 
 #reads a book
 def readABook():
 	file1 = raw_input("What book should I read? ")
 	inputfile = open(file1)
-	for line in inputfile:
+	line = inputfile.readline()
+	while line:
 		sentiment(line)
+	sentenceStructs(line)
 	arr = section()
-	print arr
 	plt.plot(arr)
 	plt.show()
 
 # provides the sentiment of a given sentence
 def sentiment(sent):
-	sent1 = TextBlob(sent)
-	arr.append(sent1.sentiment.polarity)
+	score = ana.polarity_scores(sent)
+	arr.append(score['compound'])
 
 #finds the sentence structures		
-def sentenceStructs():
-	return 0
+def sentenceStructs(sent):
+	txt = word_tokenize(sent)
+	print nl.pos_tag(txt)
 
 #average out sections of sentiment
 def section():
-	print len(arr)
 	size = int(np.floor(len(arr)/100))
 	i = 0
 	temp = []

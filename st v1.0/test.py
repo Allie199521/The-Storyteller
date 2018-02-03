@@ -10,9 +10,4 @@ import numpy as np
 import matplotlib as mp
 import bookstructs as bs
 
-allie = c.make_character("allie", False, 22)
-print (allie)
-allie.changeIsHuman(True)
-allie.addCharacteristic(0, 'eyes: blue')
-allie.describe(0)
 bs.readABook()
